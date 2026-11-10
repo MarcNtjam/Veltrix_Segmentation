@@ -1,0 +1,109 @@
+{
+  "leads_jan_sep": {
+    "2023": 14213,
+    "2024": 18815,
+    "2025": 22220,
+    "2026": 22312
+  },
+  "seasonality": {
+    "Sales leads": {
+      "1": 97,
+      "2": 93,
+      "3": 104,
+      "4": 109,
+      "5": 113,
+      "6": 103,
+      "7": 103,
+      "8": 86,
+      "9": 99,
+      "10": 104,
+      "11": 96,
+      "12": 79
+    },
+    "Lettings leads": {
+      "1": 92,
+      "2": 83,
+      "3": 96,
+      "4": 99,
+      "5": 104,
+      "6": 107,
+      "7": 128,
+      "8": 108,
+      "9": 121,
+      "10": 107,
+      "11": 82,
+      "12": 74
+    },
+    "Sale completions": {
+      "1": 106,
+      "2": 95,
+      "3": 97,
+      "4": 91,
+      "5": 97,
+      "6": 89,
+      "7": 103,
+      "8": 99,
+      "9": 98,
+      "10": 100,
+      "11": 93,
+      "12": 99
+    }
+  },
+  "stamp_duty": {
+    "completions_x": 2.16,
+    "leads_up": 0.439,
+    "april_drop": -0.701
+  },
+  "conversion_by_channel": {
+    "WeChat": 0.1375,
+    "Overseas agent partner": 0.1504,
+    "TikTok": 0.1532,
+    "Google Ads": 0.1643,
+    "Facebook": 0.1656,
+    "Instagram": 0.1702,
+    "Zoopla": 0.1717,
+    "OnTheMarket": 0.1728,
+    "Veltrix website": 0.1758,
+    "Rightmove": 0.1813,
+    "Email newsletter": 0.1957,
+    "Referral": 0.2013,
+    "Branch walk-in": 0.249,
+    "Relocation partner": 0.3875
+  },
+  "reply": {
+    "conv_under_1h": 0.3149,
+    "conv_over_24h": 0.0749,
+    "share_within_1h": "0.1589"
+  },
+  "overseas": {
+    "share_customers": 0.0941,
+    "share_sale_value": 0.1106,
+    "london_new_build": 0.3636
+  },
+  "night_share": {
+    "Overseas customers": 0.2422,
+    "UK customers": 0.0282
+  },
+  "late": {
+    "rent": "0.0990",
+    "other": "0.0357"
+  },
+  "stamp_duty_by_segment": {
+    "Corporate and relocation tenants": 133.0,
+    "First-time buyers": 180.0,
+    "Home movers and downsizers": 175.0,
+    "Overseas buyers and tenants": 121.0,
+    "UK investors and landlords": 167.0,
+    "UK renters": 109.0
+  },
+  "baselines": {
+    "Lead-to-sale conversion (buy leads), %": 15.69,
+    "Lead-to-deal conversion (all leads), %": 17.77,
+    "Median first reply, hours": 4.08,
+    "Leads answered within 1 hour, %": 15.6,
+    "Median days to close (won leads)": 41.0,
+    "Cost per campaign lead, \u00a3": 64.59,
+    "Campaign spend, \u00a3": 618341.51,
+    "Campaign-attributed leads": 9574.0
+  }
+}

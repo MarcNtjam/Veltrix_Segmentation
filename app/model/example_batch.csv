@@ -1,0 +1,201 @@
+customer_id,budget_gbp,rent_budget_pcm_gbp,sessions_total,night_session_share,virtual_tour_share,enquiries_total,days_since_last_activity,mobile_share,new_build_share,london_share,preferred_region,preferred_property_type,lead_source_primary,finance_type,customer_type,is_overseas,buyer_position,age_band
+VLX-C00271742,350000.0,,29.0,0.069,0.039603960396039604,1.0,534.0,0.5862068965517241,0.1485148514851485,0.01485148514851485,South East,Semi-detached,Google Ads,Mortgage,Individual,False,Home mover (in chain),45-54
+VLX-C00086411,320000.0,,6.0,0.0,0.03225806451612903,3.0,822.0,0.6666666666666666,0.25806451612903225,0.0,East of England,Flat,Veltrix website,Mortgage + Lifetime ISA,Individual,False,Not stated,25-34
+VLX-C00013667,270000.0,,19.0,0.0,0.07339449541284404,1.0,418.0,0.7894736842105263,0.24770642201834864,0.01834862385321101,East Midlands,Terraced,Rightmove,Mortgage,Individual,False,First-time buyer,Unknown
+VLX-C00066438,815000.0,,3.0,0.0,0.04,0.0,523.0,0.3333333333333333,0.24,0.0,South West,Semi-detached,No lead,Cash,Individual,False,Downsizer (chain-free),55-64
+VLX-C00244644,215000.0,,5.0,0.0,0.03333333333333333,0.0,41.0,1.0,0.26666666666666666,0.0,Scotland,Flat,No lead,Mortgage,Individual,False,Portfolio landlord,55-64
+VLX-C00067709,290000.0,,8.0,0.125,0.07317073170731707,1.0,128.0,0.375,0.2682926829268293,0.0,Wales,Bungalow,Branch walk-in,Mortgage,Individual,False,Downsizer (chain-free),65+
+VLX-C00114552,715000.0,,11.0,0.0,0.043478260869565216,0.0,1223.0,0.45454545454545453,0.18840579710144928,0.6811594202898551,London,Semi-detached,No lead,Cash,Individual,False,Home mover (in chain),35-44
+VLX-C00018000,535000.0,,10.0,0.0,0.0,0.0,399.0,0.6,0.15384615384615385,0.038461538461538464,East of England,Semi-detached,No lead,Cash,Individual,False,Home mover (in chain),Unknown
+VLX-C00083257,,925.0,47.0,0.085,0.021645021645021644,0.0,4.0,0.723404255319149,0.1774891774891775,0.09956709956709957,North West,Flat,No lead,Renting,Individual,False,Renter,55-64
+VLX-C00304071,290000.0,,3.0,0.0,0.10714285714285714,3.0,400.0,1.0,0.32142857142857145,0.0,West Midlands,Flat,Google Ads,Shared ownership,Individual,False,First-time buyer,25-34
+VLX-C00259371,765000.0,,7.0,0.0,0.2564102564102564,0.0,118.0,0.14285714285714285,0.9102564102564102,0.8974358974358975,London,Flat,No lead,Overseas mortgage,Individual,False,Overseas investor,35-44
+VLX-C00187877,320000.0,,20.0,0.0,0.030303030303030304,1.0,185.0,0.5,0.15151515151515152,0.020202020202020204,East Midlands,Semi-detached,OnTheMarket,Cash,Individual,False,Home mover (in chain),45-54
+VLX-C00250484,280000.0,,15.0,0.0,0.027522935779816515,1.0,29.0,0.7333333333333333,0.3119266055045872,0.01834862385321101,Scotland,Flat,TikTok,Shared ownership,Individual,False,First-time buyer,25-34
+VLX-C00158915,,2200.0,7.0,0.0,0.0,2.0,987.0,1.0,0.2,0.6,London,Flat,Google Ads,Renting,Individual,False,Renter,18-24
+VLX-C00187239,280000.0,,47.0,0.0,0.034482758620689655,1.0,124.0,0.7446808510638298,0.3586206896551724,0.017241379310344827,Yorkshire and the Humber,Flat,Rightmove,Mortgage + Lifetime ISA,Individual,False,First-time buyer,25-34
+VLX-C00097516,705000.0,,1.0,0.0,0.1111111111111111,0.0,595.0,0.0,0.0,0.0,East of England,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),25-34
+VLX-C00073796,,1100.0,4.0,0.25,0.0,0.0,809.0,1.0,0.15384615384615385,0.0,Yorkshire and the Humber,Flat,No lead,Renting,Individual,False,Renter,35-44
+VLX-C00212186,215000.0,,18.0,0.0,0.05128205128205128,3.0,766.0,0.3888888888888889,0.15384615384615385,0.017094017094017096,Yorkshire and the Humber,Flat,Google Ads,Buy-to-let mortgage,Individual,False,Portfolio landlord,25-34
+VLX-C00086661,205000.0,,8.0,0.125,0.0,2.0,0.0,0.875,0.21052631578947367,0.0,Yorkshire and the Humber,Flat,Email newsletter,Mortgage + Lifetime ISA,Individual,False,First-time buyer,25-34
+VLX-C00248573,255000.0,,2.0,0.0,0.047619047619047616,1.0,29.0,0.5,0.6190476190476191,0.09523809523809523,North West,Flat,Rightmove,Mortgage,Individual,False,First-time buyer,55-64
+VLX-C00078043,530000.0,,6.0,0.167,0.0,0.0,564.0,0.3333333333333333,0.18518518518518517,0.0,South East,Bungalow,No lead,Cash,Individual,False,Downsizer (chain-free),65+
+VLX-C00242455,280000.0,,23.0,0.0,0.02877697841726619,1.0,647.0,0.34782608695652173,0.2589928057553957,0.0,West Midlands,Flat,Rightmove,Buy-to-let mortgage,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00092588,140000.0,,4.0,0.25,0.0,1.0,1047.0,0.25,0.1282051282051282,0.02564102564102564,East Midlands,Flat,Referral,Buy-to-let mortgage,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00165790,170000.0,,4.0,0.25,0.12195121951219512,3.0,314.0,0.25,0.24390243902439024,0.0,Yorkshire and the Humber,Flat,Facebook,Buy-to-let mortgage,Individual,False,Portfolio landlord,Unknown
+VLX-C00072261,290000.0,,5.0,0.0,0.07692307692307693,2.0,933.0,0.6,0.2692307692307692,0.0,South East,Semi-detached,Veltrix website,Mortgage,Individual,False,Home mover (in chain),25-34
+VLX-C00164766,217500.0,,5.0,0.0,0.07142857142857142,2.0,20.0,0.4,0.16666666666666666,0.0,Yorkshire and the Humber,Flat,Rightmove,Buy-to-let mortgage,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00292850,,1150.0,13.0,0.154,0.023255813953488372,0.0,899.0,0.9230769230769231,0.16279069767441862,0.12790697674418605,North East,Flat,No lead,Renting,Individual,False,Renter,35-44
+VLX-C00145927,,750.0,34.0,0.324,0.024390243902439025,0.0,331.0,0.7647058823529411,0.10975609756097561,0.1016260162601626,Yorkshire and the Humber,Flat,No lead,Renting,Individual,True,Renter,45-54
+VLX-C00162614,325000.0,,35.0,0.029,0.016203703703703703,0.0,950.0,0.6285714285714286,0.2361111111111111,0.07407407407407407,South East,Flat,No lead,Cash,Individual,False,Not stated,55-64
+VLX-C00277767,505000.0,,8.0,0.0,0.07407407407407407,1.0,694.0,0.0,0.037037037037037035,0.0,South East,Bungalow,Zoopla,Equity release,Individual,False,Downsizer (chain-free),55-64
+VLX-C00177123,,950.0,5.0,0.0,0.03125,0.0,177.0,0.4,0.0625,0.03125,East Midlands,Flat,No lead,Renting,Individual,False,Not stated,Unknown
+VLX-C00153644,375000.0,,4.0,0.0,0.14285714285714285,0.0,726.0,0.5,0.14285714285714285,0.0,Wales,Flat,No lead,Buy-to-let mortgage,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00135088,275000.0,,14.0,0.0,0.03546099290780142,2.0,525.0,0.9285714285714286,0.2695035460992908,0.014184397163120567,Wales,Terraced,Rightmove,Mortgage + Lifetime ISA,Individual,False,Not stated,35-44
+VLX-C00083547,157500.0,,7.0,0.0,0.0375,2.0,439.0,0.42857142857142855,0.2125,0.0,North East,Flat,Email newsletter,Buy-to-let mortgage,Individual,False,Portfolio landlord,55-64
+VLX-C00288603,670000.0,,3.0,0.0,0.08,1.0,451.0,0.3333333333333333,0.2,0.0,South East,Semi-detached,Veltrix website,Cash,Individual,False,Home mover (in chain),45-54
+VLX-C00248858,,850.0,13.0,0.0,0.029411764705882353,0.0,84.0,0.9230769230769231,0.058823529411764705,0.07352941176470588,Scotland,Flat,No lead,Renting,Individual,False,Renter,25-34
+VLX-C00306021,790000.0,,3.0,0.0,0.0,1.0,650.0,0.3333333333333333,0.14285714285714285,0.8571428571428571,London,Semi-detached,Rightmove,Mortgage,Individual,False,Home mover (in chain),Unknown
+VLX-C00144722,,2150.0,0.0,0.0,0.0,1.0,1241.0,0.0,0.0,0.0,Scotland,Unknown,Google Ads,Company let,Corporate,False,Corporate tenant,Unknown
+VLX-C00152953,545000.0,,19.0,0.105,0.06486486486486487,2.0,942.0,0.3157894736842105,0.20540540540540542,0.021621621621621623,East of England,Semi-detached,Rightmove,Mortgage,Individual,False,Home mover (in chain),45-54
+VLX-C00011175,420000.0,,2.0,0.0,0.125,0.0,638.0,0.0,0.375,0.0,North West,Detached,No lead,Equity release,Individual,False,Downsizer (chain-free),Unknown
+VLX-C00021561,215000.0,,3.0,0.0,0.0,2.0,1055.0,0.6666666666666666,0.3333333333333333,0.0,West Midlands,Flat,Google Ads,Shared ownership,Individual,False,First-time buyer,25-34
+VLX-C00096122,335000.0,,40.0,0.025,0.022613065326633167,1.0,274.0,0.525,0.3869346733668342,0.07035175879396985,North West,Flat,Rightmove,Mortgage + Lifetime ISA,Individual,False,Not stated,35-44
+VLX-C00076781,,1200.0,2.0,0.0,0.058823529411764705,1.0,806.0,0.0,0.11764705882352941,0.17647058823529413,Yorkshire and the Humber,Flat,Veltrix website,Renting,Individual,False,Not stated,Unknown
+VLX-C00144753,340000.0,,3.0,0.0,0.16666666666666666,1.0,157.0,0.3333333333333333,0.16666666666666666,0.0,East Midlands,Bungalow,Zoopla,Cash,Individual,False,Downsizer (chain-free),65+
+VLX-C00209002,320000.0,,0.0,0.0,0.0,0.0,239.0,0.0,0.0,0.0,South East,Unknown,No lead,Mortgage + Lifetime ISA,Individual,False,First-time buyer,35-44
+VLX-C00240268,185000.0,,3.0,0.0,0.041666666666666664,1.0,136.0,0.3333333333333333,0.2916666666666667,0.0,North West,Flat,Referral,Buy-to-let mortgage,Individual,False,Not stated,55-64
+VLX-C00088640,,2400.0,6.0,0.167,0.07407407407407407,1.0,28.0,0.6666666666666666,0.2222222222222222,0.7407407407407407,London,Flat,OnTheMarket,Renting,Individual,False,Renter,25-34
+VLX-C00228082,195000.0,,2.0,0.0,0.029411764705882353,0.0,355.0,0.5,0.35294117647058826,0.0,Yorkshire and the Humber,Flat,No lead,Mortgage + Lifetime ISA,Individual,False,Not stated,25-34
+VLX-C00177567,,1037.5,19.0,0.053,0.01282051282051282,0.0,1191.0,0.9473684210526315,0.0641025641025641,0.10256410256410256,Scotland,Flat,No lead,Renting,Individual,False,Not stated,25-34
+VLX-C00153148,220000.0,,9.0,0.333,0.0,2.0,959.0,0.4444444444444444,0.2876712328767123,0.0410958904109589,Wales,Flat,Rightmove,Mortgage,Individual,False,First-time buyer,25-34
+VLX-C00170192,580000.0,,9.0,0.111,0.12,0.0,496.0,0.0,0.12,0.0,South East,Detached,No lead,Equity release,Individual,True,Downsizer (chain-free),55-64
+VLX-C00240647,270000.0,,5.0,0.0,0.02564102564102564,1.0,2.0,0.4,0.1282051282051282,0.0,Scotland,Flat,Rightmove,Cash,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00165157,255000.0,,4.0,0.0,0.02040816326530612,1.0,77.0,0.0,0.2653061224489796,0.0,Scotland,Flat,Zoopla,Buy-to-let mortgage,Individual,False,Portfolio landlord,35-44
+VLX-C00294872,185000.0,,14.0,0.0,0.05970149253731343,1.0,16.0,0.21428571428571427,0.2835820895522388,0.0,North East,Flat,Rightmove,Buy-to-let mortgage,Individual,False,Portfolio landlord,55-64
+VLX-C00243319,120000.0,,11.0,0.091,0.03508771929824561,3.0,803.0,0.45454545454545453,0.17543859649122806,0.0,North East,Flat,Email newsletter,Cash,Individual,False,Portfolio landlord,55-64
+VLX-C00195715,495000.0,,0.0,0.0,0.0,0.0,608.0,0.0,0.0,0.0,South West,Unknown,No lead,Cash,Individual,False,Home mover (in chain),35-44
+VLX-C00042154,,1550.0,19.0,0.0,0.06557377049180328,1.0,1080.0,0.7894736842105263,0.09836065573770492,0.11475409836065574,South East,Flat,Branch walk-in,Renting,Individual,False,Renter,Unknown
+VLX-C00101057,,1250.0,15.0,0.0,0.046875,2.0,815.0,0.6666666666666666,0.296875,0.125,North West,Flat,Rightmove,Renting,Individual,False,Renter,25-34
+VLX-C00041113,,3500.0,7.0,0.429,0.043478260869565216,1.0,185.0,0.2857142857142857,0.2608695652173913,0.8260869565217391,London,Flat,Email newsletter,Renting,Individual,True,Corporate tenant,25-34
+VLX-C00244121,,1050.0,15.0,0.0,0.04597701149425287,1.0,824.0,0.8666666666666667,0.16091954022988506,0.12643678160919541,West Midlands,Flat,Veltrix website,Renting,Individual,False,Renter,18-24
+VLX-C00128387,,1412.5,6.0,0.0,0.10714285714285714,0.0,421.0,0.8333333333333334,0.14285714285714285,0.14285714285714285,East Midlands,Flat,No lead,Renting,Individual,False,Renter,18-24
+VLX-C00147883,170000.0,,7.0,0.0,0.02127659574468085,2.0,421.0,0.5714285714285714,0.10638297872340426,0.0,Scotland,Flat,Rightmove,Buy-to-let mortgage,Individual,False,Portfolio landlord,Unknown
+VLX-C00221096,,1125.0,24.0,0.042,0.0748663101604278,0.0,106.0,0.7916666666666666,0.12299465240641712,0.10695187165775401,Yorkshire and the Humber,Flat,No lead,Renting,Individual,False,Not stated,45-54
+VLX-C00280228,375000.0,,3.0,0.0,0.16666666666666666,1.0,69.0,0.3333333333333333,0.16666666666666666,0.0,South East,Semi-detached,Branch walk-in,Mortgage,Individual,False,Home mover (in chain),Unknown
+VLX-C00043619,,3000.0,6.0,0.333,0.0,0.0,49.0,0.8333333333333334,0.1111111111111111,0.05555555555555555,South East,Flat,No lead,Renting,Individual,False,Renter,18-24
+VLX-C00254808,155000.0,,26.0,0.077,0.03365384615384615,2.0,377.0,0.6923076923076923,0.27884615384615385,0.004807692307692308,Yorkshire and the Humber,Flat,Instagram,Cash,Individual,False,First-time buyer,35-44
+VLX-C00310026,210000.0,,3.0,0.0,0.0,1.0,1.0,0.0,0.29545454545454547,0.0,West Midlands,Flat,Rightmove,Buy-to-let mortgage,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00108776,,3200.0,11.0,0.0,0.1,1.0,3.0,0.36363636363636365,0.5666666666666667,0.8166666666666667,London,Flat,Rightmove,Renting,Individual,False,Not stated,25-34
+VLX-C00240835,220000.0,,5.0,0.0,0.045454545454545456,2.0,653.0,0.8,0.5454545454545454,0.0,Yorkshire and the Humber,Flat,OnTheMarket,Mortgage,Individual,False,First-time buyer,Unknown
+VLX-C00116610,,1200.0,1.0,0.0,0.0,3.0,502.0,1.0,0.2,0.0,North West,Flat,Zoopla,Renting,Individual,False,Renter,Unknown
+VLX-C00111444,600000.0,,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,East of England,Semi-detached,Rightmove,Mortgage,Individual,False,Home mover (in chain),25-34
+VLX-C00304230,410000.0,,36.0,0.0,0.02857142857142857,0.0,406.0,0.5277777777777778,0.2163265306122449,0.0163265306122449,South East,Semi-detached,No lead,Cash,Individual,False,Home mover (in chain),25-34
+VLX-C00274676,165000.0,,1.0,0.0,0.0,1.0,797.0,1.0,0.3333333333333333,0.0,Wales,Terraced,Zoopla,Mortgage,Individual,False,Not stated,25-34
+VLX-C00250510,195000.0,,4.0,0.25,0.07142857142857142,4.0,0.0,1.0,0.21428571428571427,0.0,East Midlands,Flat,Rightmove,Mortgage + Lifetime ISA,Individual,False,First-time buyer,25-34
+VLX-C00019476,,1350.0,5.0,0.0,0.024390243902439025,0.0,1053.0,0.6,0.12195121951219512,0.0975609756097561,East Midlands,Terraced,No lead,Renting,Individual,False,Renter,Unknown
+VLX-C00255151,940000.0,,9.0,0.0,0.1111111111111111,0.0,952.0,0.4444444444444444,0.14814814814814814,0.037037037037037035,East of England,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),45-54
+VLX-C00051194,,1950.0,96.0,0.042,0.0491283676703645,0.0,172.0,0.7916666666666666,0.18541996830427893,0.09350237717908082,East of England,Flat,No lead,Renting,Individual,False,Renter,45-54
+VLX-C00166355,,1950.0,8.0,0.0,0.0625,1.0,158.0,0.75,0.25,0.15625,South West,Flat,Rightmove,Renting,Individual,False,Renter,25-34
+VLX-C00109106,210000.0,,22.0,0.0,0.013157894736842105,2.0,966.0,0.8636363636363636,0.3157894736842105,0.006578947368421052,West Midlands,Flat,Instagram,Mortgage + Lifetime ISA,Individual,False,First-time buyer,45-54
+VLX-C00101012,295000.0,,18.0,0.0,0.04065040650406504,1.0,897.0,0.5555555555555556,0.21951219512195122,0.016260162601626018,North East,Semi-detached,Rightmove,Mortgage,Individual,False,Home mover (in chain),25-34
+VLX-C00135859,385000.0,,53.0,0.019,0.03014416775884666,0.0,0.0,0.6037735849056604,0.35386631716906947,0.7431192660550459,London,Flat,No lead,Mortgage,Individual,False,Home mover (in chain),35-44
+VLX-C00180552,250000.0,,1.0,0.0,0.0,0.0,1036.0,0.0,0.09090909090909091,0.0,Yorkshire and the Humber,Flat,No lead,Cash,Individual,False,Downsizer (chain-free),Unknown
+VLX-C00193240,445000.0,,1.0,0.0,0.0,0.0,107.0,0.0,0.0,0.0,South West,Flat,No lead,Cash,Individual,False,Downsizer (chain-free),Unknown
+VLX-C00165371,435000.0,,34.0,0.059,0.0273224043715847,0.0,416.0,0.6470588235294118,0.38979963570127507,0.761384335154827,London,Flat,No lead,Mortgage,Individual,False,Not stated,25-34
+VLX-C00166771,265000.0,,2.0,0.0,0.0,2.0,243.0,0.0,0.0,0.0,South West,Flat,Rightmove,Cash,Individual,False,Downsizer (chain-free),Unknown
+VLX-C00304503,280000.0,,57.0,0.0,0.038135593220338986,0.0,231.0,0.543859649122807,0.2838983050847458,0.05790960451977401,Yorkshire and the Humber,Flat,No lead,Shared ownership,Individual,False,Home mover (in chain),Unknown
+VLX-C00230836,265000.0,,8.0,0.0,0.06060606060606061,2.0,872.0,0.875,0.21212121212121213,0.0,East of England,Flat,Rightmove,Shared ownership,Individual,False,First-time buyer,25-34
+VLX-C00141226,205000.0,,2.0,0.0,0.1,4.0,19.0,0.0,0.5,0.0,North West,Terraced,Veltrix website,Cash,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00082689,170000.0,,13.0,0.0,0.015151515151515152,1.0,581.0,0.8461538461538461,0.26515151515151514,0.022727272727272728,North East,Flat,TikTok,Shared ownership,Individual,False,Not stated,45-54
+VLX-C00062626,320000.0,,1.0,0.0,0.0,0.0,97.0,0.0,0.1,0.0,South East,Semi-detached,No lead,Cash,Individual,False,Home mover (in chain),25-34
+VLX-C00019392,,1400.0,3.0,0.0,0.1111111111111111,1.0,961.0,0.6666666666666666,0.1111111111111111,0.2222222222222222,South West,Flat,Zoopla,Renting,Individual,False,Renter,18-24
+VLX-C00033677,,1750.0,10.0,0.0,0.0784313725490196,1.0,2.0,0.7,0.22549019607843138,0.7450980392156863,London,Flat,TikTok,Renting,Individual,False,Renter,25-34
+VLX-C00041157,470000.0,,19.0,0.053,0.04878048780487805,0.0,522.0,0.6842105263157895,0.23170731707317074,0.6585365853658537,London,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),35-44
+VLX-C00073063,530000.0,,14.0,0.143,0.01694915254237288,1.0,1121.0,0.7857142857142857,0.13559322033898305,0.0,East of England,Semi-detached,Rightmove,Mortgage,Individual,False,Not stated,Unknown
+VLX-C00205386,,1300.0,4.0,0.0,0.0,1.0,65.0,0.75,0.14285714285714285,0.14285714285714285,South West,Flat,Branch walk-in,Renting,Individual,False,Renter,25-34
+VLX-C00162790,355000.0,,8.0,0.0,0.017543859649122806,0.0,434.0,0.5,0.07017543859649122,0.03508771929824561,South West,Semi-detached,No lead,Mortgage,Individual,False,Not stated,35-44
+VLX-C00260039,295000.0,,8.0,0.0,0.05172413793103448,2.0,154.0,0.875,0.27586206896551724,0.017241379310344827,Yorkshire and the Humber,Flat,Facebook,Mortgage,Individual,False,First-time buyer,Unknown
+VLX-C00109131,285000.0,,42.0,0.024,0.03985507246376811,2.0,2.0,0.8333333333333334,0.5181159420289855,0.014492753623188406,North West,Flat,TikTok,Mortgage + Lifetime ISA,Individual,False,Not stated,Unknown
+VLX-C00245912,340000.0,,4.0,0.75,0.05555555555555555,1.0,25.0,0.75,0.2222222222222222,0.0,South West,Bungalow,Referral,Cash,Individual,True,Downsizer (chain-free),Unknown
+VLX-C00210268,340000.0,,8.0,0.125,0.2127659574468085,0.0,1073.0,0.375,0.8723404255319149,0.2765957446808511,West Midlands,Flat,No lead,Overseas mortgage,Individual,True,Overseas investor,55-64
+VLX-C00099795,,1050.0,7.0,0.0,0.03125,0.0,1127.0,0.5714285714285714,0.234375,0.140625,North East,Flat,No lead,Renting,Individual,False,Renter,25-34
+VLX-C00291094,215000.0,,13.0,0.0,0.041666666666666664,0.0,372.0,0.8461538461538461,0.10416666666666667,0.0,East Midlands,Flat,No lead,Shared ownership,Individual,False,First-time buyer,45-54
+VLX-C00179796,510000.0,,6.0,0.167,0.08,0.0,432.0,0.6666666666666666,0.24,0.02,East Midlands,Detached,No lead,Mortgage,Individual,False,Overseas investor,35-44
+VLX-C00216992,555000.0,,3.0,0.0,0.08333333333333333,0.0,855.0,0.0,0.16666666666666666,0.0,East of England,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),35-44
+VLX-C00183372,180000.0,,12.0,0.167,0.04201680672268908,0.0,801.0,0.3333333333333333,0.21008403361344538,0.0,West Midlands,Flat,No lead,Cash,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00314080,565000.0,,3.0,0.0,0.05263157894736842,0.0,22.0,0.3333333333333333,0.21052631578947367,0.0,East of England,Semi-detached,No lead,Equity release,Individual,False,Downsizer (chain-free),65+
+VLX-C00286373,305000.0,,12.0,0.0,0.03910614525139665,0.0,137.0,0.5,0.29608938547486036,0.0223463687150838,Scotland,Flat,No lead,Mortgage,Individual,False,Downsizer (chain-free),25-34
+VLX-C00051823,755000.0,,51.0,0.039,0.20135746606334842,1.0,10.0,0.5098039215686274,0.7895927601809954,0.20361990950226244,South East,Flat,Overseas agent partner,Overseas mortgage,Individual,True,Downsizer (chain-free),35-44
+VLX-C00014032,470000.0,,28.0,0.071,0.04419889502762431,1.0,28.0,0.7142857142857143,0.39779005524861877,0.712707182320442,London,Flat,Google Ads,Mortgage,Individual,False,First-time buyer,35-44
+VLX-C00039342,365000.0,,1.0,0.0,0.0,0.0,1151.0,1.0,0.25,0.75,London,Bungalow,No lead,Mortgage,Individual,False,Not stated,Unknown
+VLX-C00114058,285000.0,,19.0,0.0,0.023255813953488372,0.0,553.0,0.8947368421052632,0.29457364341085274,0.007751937984496124,East Midlands,Terraced,No lead,Mortgage + Lifetime ISA,Individual,False,Not stated,18-24
+VLX-C00204634,,2050.0,9.0,0.111,0.0,1.0,133.0,0.5555555555555556,0.1836734693877551,0.061224489795918366,Yorkshire and the Humber,Flat,OnTheMarket,Renting,Individual,False,Not stated,18-24
+VLX-C00233022,545000.0,,11.0,0.091,0.025252525252525252,0.0,742.0,0.6363636363636364,0.41919191919191917,0.803030303030303,London,Flat,No lead,Mortgage + Lifetime ISA,Individual,False,Not stated,35-44
+VLX-C00035070,660000.0,,40.0,0.1,0.026785714285714284,0.0,1.0,0.675,0.2357142857142857,0.055357142857142855,Yorkshire and the Humber,Semi-detached,No lead,Shared ownership,Individual,False,Not stated,25-34
+VLX-C00173163,195000.0,,29.0,0.0,0.012578616352201259,1.0,1.0,0.7931034482758621,0.23270440251572327,0.0,Yorkshire and the Humber,Flat,Zoopla,Mortgage,Individual,False,Home mover (in chain),18-24
+VLX-C00251988,,1550.0,6.0,0.0,0.03225806451612903,1.0,1093.0,0.6666666666666666,0.16129032258064516,0.1935483870967742,Scotland,Flat,Relocation partner,Renting,Individual,False,Corporate tenant,35-44
+VLX-C00159790,222500.0,,3.0,0.0,0.05555555555555555,1.0,291.0,0.6666666666666666,0.2222222222222222,0.0,Yorkshire and the Humber,Flat,Zoopla,Buy-to-let mortgage,Individual,False,Portfolio landlord,35-44
+VLX-C00301711,105000.0,,9.0,0.222,0.038461538461538464,1.0,617.0,0.8888888888888888,0.21153846153846154,0.0,North East,Flat,Veltrix website,Mortgage,Individual,False,First-time buyer,18-24
+VLX-C00289692,220000.0,,12.0,0.0,0.024390243902439025,1.0,3.0,0.6666666666666666,0.17073170731707318,0.036585365853658534,South East,Semi-detached,Facebook,Cash,Individual,False,Home mover (in chain),45-54
+VLX-C00199751,152500.0,,8.0,0.0,0.04878048780487805,1.0,0.0,0.25,0.25609756097560976,0.024390243902439025,North West,Flat,Rightmove,Buy-to-let mortgage,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00185734,465000.0,,0.0,0.0,0.0,2.0,376.0,0.0,0.0,0.0,East Midlands,Unknown,Email newsletter,Cash,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00164843,247500.0,,1.0,1.0,0.3333333333333333,1.0,932.0,0.0,0.3333333333333333,0.0,Wales,Bungalow,Rightmove,Cash,Individual,False,Downsizer (chain-free),65+
+VLX-C00104577,510000.0,,22.0,0.0,0.21428571428571427,0.0,203.0,0.6818181818181818,0.9285714285714286,0.22142857142857142,North West,Flat,No lead,Cash,Individual,False,Not stated,35-44
+VLX-C00161985,,1400.0,14.0,0.0,0.030303030303030304,2.0,418.0,0.9285714285714286,0.3333333333333333,0.030303030303030304,North West,Flat,Facebook,Renting,Individual,False,Home mover (in chain),18-24
+VLX-C00187301,305000.0,,9.0,0.0,0.045454545454545456,0.0,619.0,0.5555555555555556,0.15151515151515152,0.0,East Midlands,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),35-44
+VLX-C00076297,1255000.0,,6.0,0.0,0.21621621621621623,2.0,839.0,0.8333333333333334,0.8918918918918919,0.918918918918919,London,Flat,Google Ads,Overseas mortgage,Individual,True,Overseas investor,35-44
+VLX-C00296428,345000.0,,6.0,0.0,0.017543859649122806,2.0,199.0,0.6666666666666666,0.10526315789473684,0.0,South West,Semi-detached,Rightmove,Mortgage,Individual,False,Not stated,Unknown
+VLX-C00116954,750000.0,,11.0,0.273,0.1732283464566929,1.0,639.0,0.5454545454545454,0.9133858267716536,0.9133858267716536,London,Flat,Overseas agent partner,Overseas mortgage,Individual,True,Overseas investor,35-44
+VLX-C00204552,410000.0,,1.0,0.0,0.0,1.0,1226.0,1.0,0.2222222222222222,0.05555555555555555,West Midlands,Detached,Zoopla,Cash,Individual,False,Home mover (in chain),35-44
+VLX-C00154440,200000.0,,24.0,0.0,0.05084745762711865,1.0,582.0,0.9166666666666666,0.3389830508474576,0.011299435028248588,West Midlands,Flat,TikTok,Cash,Individual,False,First-time buyer,25-34
+VLX-C00209209,,1100.0,32.0,0.094,0.05172413793103448,0.0,659.0,0.75,0.25287356321839083,0.07471264367816093,North West,Flat,No lead,Renting,Individual,False,Renter,25-34
+VLX-C00258563,275000.0,,29.0,0.0,0.012232415902140673,0.0,983.0,0.5517241379310345,0.327217125382263,0.05504587155963303,West Midlands,Flat,No lead,Cash,Individual,False,Renter,Unknown
+VLX-C00141400,180000.0,,12.0,0.0,0.03225806451612903,1.0,112.0,0.3333333333333333,0.1032258064516129,0.012903225806451613,East Midlands,Flat,Email newsletter,Cash,Individual,False,Corporate tenant,Unknown
+VLX-C00212818,,950.0,2.0,0.0,0.0,1.0,1259.0,1.0,0.3333333333333333,0.1111111111111111,North West,Flat,Rightmove,Renting,Individual,False,Renter,Unknown
+VLX-C00069802,,1400.0,19.0,0.0,0.058823529411764705,3.0,223.0,0.8947368421052632,0.07058823529411765,0.08235294117647059,East Midlands,Flat,Google Ads,Renting,Individual,False,Renter,Unknown
+VLX-C00126922,410000.0,,10.0,0.3,0.26515151515151514,1.0,968.0,0.5,0.9090909090909091,0.21212121212121213,North West,Flat,Referral,Cash,Individual,True,Not stated,Unknown
+VLX-C00047801,210000.0,,13.0,0.0,0.03571428571428571,0.0,796.0,0.8461538461538461,0.23214285714285715,0.026785714285714284,Yorkshire and the Humber,Flat,No lead,Mortgage + Lifetime ISA,Individual,False,First-time buyer,45-54
+VLX-C00209234,1670000.0,,29.0,0.103,0.18835616438356165,1.0,17.0,0.4482758620689655,0.8972602739726028,0.8527397260273972,London,Flat,Overseas agent partner,Overseas mortgage,Individual,True,Overseas investor,55-64
+VLX-C00314827,350000.0,,8.0,0.0,0.030303030303030304,1.0,478.0,0.375,0.24242424242424243,0.030303030303030304,South East,Semi-detached,Rightmove,Mortgage,Individual,False,Home mover (in chain),25-34
+VLX-C00133988,235000.0,,26.0,0.115,0.03151862464183381,0.0,637.0,0.8076923076923077,0.22063037249283668,0.07449856733524356,Wales,Flat,No lead,Mortgage,Individual,False,Not stated,45-54
+VLX-C00233293,,3050.0,1.0,0.0,0.1111111111111111,1.0,621.0,1.0,0.1111111111111111,0.0,South East,Detached,Referral,Company let,Corporate,True,Corporate tenant,Unknown
+VLX-C00223368,395000.0,,4.0,0.0,0.06666666666666667,1.0,143.0,0.0,0.15555555555555556,0.022222222222222223,South East,Semi-detached,Email newsletter,Cash,Individual,False,Not stated,25-34
+VLX-C00276356,205000.0,,58.0,0.034,0.04187192118226601,1.0,2.0,0.8620689655172413,0.39901477832512317,0.017241379310344827,North West,Flat,Veltrix website,Mortgage + Lifetime ISA,Individual,False,First-time buyer,25-34
+VLX-C00162795,360000.0,,1.0,0.0,0.0,0.0,520.0,1.0,0.0,0.0,North West,Bungalow,No lead,Mortgage,Individual,False,Downsizer (chain-free),55-64
+VLX-C00314530,,1837.5,3.0,0.333,0.0,1.0,1310.0,1.0,0.1111111111111111,0.6111111111111112,London,Flat,TikTok,Renting,Individual,False,Renter,25-34
+VLX-C00048358,375000.0,,34.0,0.206,0.21694915254237288,1.0,272.0,0.4117647058823529,0.752542372881356,0.2,Yorkshire and the Humber,Flat,Rightmove,Cash,Individual,True,Overseas investor,Unknown
+VLX-C00280310,175000.0,,0.0,0.0,0.0,1.0,422.0,0.0,0.0,0.0,North East,Unknown,TikTok,Mortgage,Individual,False,First-time buyer,35-44
+VLX-C00273221,670000.0,,25.0,0.0,0.23943661971830985,3.0,108.0,0.6,0.8497652582159625,0.8967136150234741,London,Flat,Overseas agent partner,Overseas mortgage,Individual,True,Overseas investor,55-64
+VLX-C00194047,370000.0,,20.0,0.0,0.044642857142857144,3.0,257.0,0.75,0.1875,0.008928571428571428,West Midlands,Semi-detached,Google Ads,Cash,Individual,False,Home mover (in chain),25-34
+VLX-C00193914,,900.0,12.0,0.0,0.04838709677419355,1.0,659.0,0.75,0.04838709677419355,0.11290322580645161,Scotland,Flat,Rightmove,Renting,Individual,False,Renter,25-34
+VLX-C00232847,345000.0,,32.0,0.0,0.04824561403508772,1.0,0.0,0.53125,0.10526315789473684,0.017543859649122806,South West,Semi-detached,Email newsletter,Mortgage,Individual,False,Home mover (in chain),25-34
+VLX-C00040189,460000.0,,17.0,0.0,0.1407035175879397,1.0,780.0,0.47058823529411764,0.8190954773869347,0.9095477386934674,London,Flat,Overseas agent partner,Cash,Limited company (SPV),True,Overseas investor,Unknown
+VLX-C00129977,257500.0,,15.0,0.067,0.022222222222222223,1.0,1068.0,0.6,0.3333333333333333,0.0,East Midlands,Terraced,Veltrix website,Shared ownership,Individual,False,First-time buyer,35-44
+VLX-C00273850,,1450.0,4.0,0.0,0.0,0.0,359.0,0.75,0.0,0.0,Yorkshire and the Humber,Terraced,No lead,Renting,Individual,False,Renter,25-34
+VLX-C00052563,,2150.0,27.0,0.037,0.024390243902439025,0.0,774.0,0.9259259259259259,0.23170731707317074,0.8109756097560976,London,Flat,No lead,Renting,Individual,False,Not stated,18-24
+VLX-C00128843,610000.0,,13.0,0.0,0.023255813953488372,1.0,643.0,0.38461538461538464,0.09302325581395349,0.046511627906976744,East of England,Detached,Email newsletter,Mortgage,Individual,False,Home mover (in chain),35-44
+VLX-C00288364,185000.0,,8.0,0.0,0.031746031746031744,0.0,1151.0,0.75,0.09523809523809523,0.0,Yorkshire and the Humber,Flat,No lead,Mortgage,Individual,False,First-time buyer,Unknown
+VLX-C00101583,880000.0,,11.0,0.364,0.19767441860465115,2.0,75.0,0.36363636363636365,0.9069767441860465,0.9186046511627907,London,Flat,Instagram,Overseas mortgage,Individual,True,Overseas investor,Unknown
+VLX-C00314194,,2150.0,11.0,0.0,0.014925373134328358,0.0,1123.0,0.8181818181818182,0.16417910447761194,0.7313432835820896,London,Flat,No lead,Renting,Individual,False,Renter,25-34
+VLX-C00270060,245000.0,,33.0,0.03,0.03734439834024896,2.0,2.0,0.696969696969697,0.2697095435684647,0.012448132780082987,Yorkshire and the Humber,Flat,Rightmove,Mortgage + Lifetime ISA,Individual,False,First-time buyer,Unknown
+VLX-C00125412,440000.0,,64.0,0.031,0.033773861967694566,0.0,344.0,0.671875,0.20704845814977973,0.06020558002936858,South West,Flat,No lead,Mortgage,Individual,False,Downsizer (chain-free),55-64
+VLX-C00049120,315000.0,,8.0,0.0,0.010638297872340425,1.0,958.0,0.5,0.18085106382978725,0.031914893617021274,North West,Semi-detached,Zoopla,Mortgage,Individual,False,Home mover (in chain),Unknown
+VLX-C00297395,215000.0,,4.0,0.0,0.0,1.0,210.0,1.0,0.3684210526315789,0.0,North West,Flat,Zoopla,Cash,Individual,False,Not stated,35-44
+VLX-C00091273,345000.0,,5.0,0.2,0.07142857142857142,2.0,542.0,0.2,0.14285714285714285,0.0,South West,Flat,Branch walk-in,Cash,Individual,False,Not stated,55-64
+VLX-C00277096,477500.0,,5.0,0.0,0.06818181818181818,2.0,33.0,0.0,0.09090909090909091,0.0,South West,Semi-detached,Google Ads,Mortgage,Individual,False,Home mover (in chain),45-54
+VLX-C00298339,540000.0,,17.0,0.059,0.03409090909090909,1.0,1208.0,0.7058823529411765,0.4318181818181818,0.6818181818181818,London,Flat,Google Ads,Mortgage,Individual,False,First-time buyer,Unknown
+VLX-C00191802,,1100.0,4.0,0.0,0.0,2.0,494.0,0.75,0.08333333333333333,0.0,West Midlands,Flat,Facebook,Renting,Individual,False,Overseas investor,25-34
+VLX-C00038902,1380000.0,,15.0,0.333,0.12244897959183673,2.0,9.0,0.8,0.8979591836734694,0.8979591836734694,London,Flat,Facebook,Overseas mortgage,Individual,True,Overseas investor,35-44
+VLX-C00240536,220000.0,,0.0,0.0,0.0,2.0,488.0,0.0,0.0,0.0,Yorkshire and the Humber,Unknown,Google Ads,Mortgage,Individual,False,First-time buyer,25-34
+VLX-C00275871,200000.0,,83.0,0.024,0.025385312783318223,0.0,5.0,0.6746987951807228,0.32184950135992746,0.05802357207615594,West Midlands,Flat,No lead,Mortgage,Individual,False,Home mover (in chain),35-44
+VLX-C00238045,260000.0,,43.0,0.047,0.048327137546468404,2.0,1.0,0.8372093023255814,0.2936802973977695,0.011152416356877323,South East,Flat,Zoopla,Mortgage,Individual,False,First-time buyer,55-64
+VLX-C00166396,450000.0,,11.0,0.0,0.07627118644067797,1.0,11.0,0.45454545454545453,0.22033898305084745,0.0423728813559322,North West,Semi-detached,Email newsletter,Mortgage,Individual,False,Home mover (in chain),55-64
+VLX-C00178652,1205000.0,,10.0,0.0,0.02247191011235955,1.0,4.0,0.4,0.2696629213483146,0.0449438202247191,South East,Detached,Google Ads,Mortgage,Individual,False,Not stated,35-44
+VLX-C00063465,,1950.0,16.0,0.063,0.05714285714285714,1.0,284.0,0.625,0.2,0.8,London,Flat,Veltrix website,Renting,Individual,False,Not stated,Unknown
+VLX-C00300929,160000.0,,18.0,0.0,0.035897435897435895,1.0,347.0,0.2222222222222222,0.2512820512820513,0.005128205128205128,West Midlands,Flat,OnTheMarket,Buy-to-let mortgage,Individual,False,Portfolio landlord,45-54
+VLX-C00069502,315000.0,,21.0,0.0,0.021897810218978103,2.0,133.0,0.8571428571428571,0.291970802919708,0.0364963503649635,Yorkshire and the Humber,Flat,Instagram,Cash,Individual,False,Not stated,25-34
+VLX-C00294413,200000.0,,5.0,0.0,0.0,1.0,8.0,1.0,0.38095238095238093,0.0,North East,Flat,Google Ads,Shared ownership,Individual,False,First-time buyer,35-44
+VLX-C00161036,200000.0,,20.0,0.35,0.18181818181818182,0.0,1009.0,0.65,0.7329545454545454,0.16477272727272727,Wales,Flat,No lead,Cash,Individual,True,Overseas investor,25-34
+VLX-C00186633,730000.0,,5.0,0.0,0.09090909090909091,0.0,841.0,0.4,0.13636363636363635,0.0,South West,Semi-detached,No lead,Cash,Individual,False,Home mover (in chain),35-44
+VLX-C00052899,300000.0,,21.0,0.0,0.012861736334405145,0.0,72.0,0.5714285714285714,0.18006430868167203,0.04501607717041801,South West,Flat,No lead,Mortgage,Individual,False,Home mover (in chain),35-44
+VLX-C00026795,,1150.0,25.0,0.08,0.05434782608695652,1.0,212.0,0.84,0.11956521739130435,0.021739130434782608,Scotland,Flat,Rightmove,Renting,Individual,False,Renter,25-34
+VLX-C00051287,,2400.0,12.0,0.083,0.03636363636363636,1.0,545.0,0.75,0.2,0.7818181818181819,London,Flat,Rightmove,Renting,Individual,False,Renter,18-24
+VLX-C00100420,315000.0,,9.0,0.0,0.08,0.0,532.0,0.7777777777777778,0.38,0.0,Yorkshire and the Humber,Flat,No lead,Mortgage,Individual,False,Not stated,25-34
+VLX-C00120153,155000.0,,3.0,0.0,0.14285714285714285,0.0,88.0,0.3333333333333333,0.23809523809523808,0.0,North West,Flat,No lead,Cash,Limited company (SPV),False,Not stated,Unknown
+VLX-C00203920,545000.0,,3.0,0.0,0.125,2.0,49.0,0.3333333333333333,0.125,0.0,South West,Bungalow,Branch walk-in,Equity release,Individual,False,Downsizer (chain-free),Unknown
+VLX-C00246456,410000.0,,9.0,0.0,0.09090909090909091,2.0,452.0,0.2222222222222222,0.2727272727272727,0.0,East of England,Flat,Rightmove,Cash,Individual,False,Downsizer (chain-free),65+
+VLX-C00229620,240000.0,,7.0,0.0,0.019230769230769232,1.0,66.0,0.8571428571428571,0.34615384615384615,0.0,North West,Flat,TikTok,Mortgage + Lifetime ISA,Individual,False,First-time buyer,25-34
+VLX-C00070759,525000.0,,20.0,0.0,0.05333333333333334,0.0,1002.0,0.55,0.14,0.02,South East,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),25-34
+VLX-C00102987,350000.0,,11.0,0.0,0.04054054054054054,0.0,624.0,0.5454545454545454,0.16216216216216217,0.0,East of England,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),45-54
+VLX-C00186379,260000.0,,18.0,0.167,0.036036036036036036,2.0,1.0,0.7777777777777778,0.26126126126126126,0.009009009009009009,Yorkshire and the Humber,Flat,Referral,Mortgage,Individual,False,First-time buyer,25-34
+VLX-C00074380,145000.0,,5.0,0.0,0.0,1.0,314.0,1.0,0.2631578947368421,0.0,East Midlands,Flat,Instagram,Shared ownership,Individual,False,First-time buyer,Unknown
+VLX-C00070944,120000.0,,1.0,0.0,0.0,0.0,194.0,0.0,0.0,0.0,East Midlands,Flat,No lead,Buy-to-let mortgage,Individual,False,Portfolio landlord,45-54
+VLX-C00297113,175000.0,,16.0,0.063,0.03787878787878788,2.0,13.0,0.3125,0.20454545454545456,0.015151515151515152,Yorkshire and the Humber,Flat,Email newsletter,Buy-to-let mortgage,Limited company (SPV),False,Portfolio landlord,Unknown
+VLX-C00064672,,3400.0,2.0,0.0,0.18181818181818182,1.0,954.0,0.0,0.45454545454545453,0.7272727272727273,London,Flat,Relocation partner,Renting,Individual,False,Corporate tenant,35-44
+VLX-C00263476,,1250.0,5.0,0.0,0.029411764705882353,0.0,149.0,1.0,0.29411764705882354,0.11764705882352941,North West,Flat,No lead,Renting,Individual,False,Renter,25-34
+VLX-C00251621,170000.0,,16.0,0.063,0.02702702702702703,1.0,2.0,0.75,0.47297297297297297,0.02702702702702703,North West,Flat,TikTok,Cash,Individual,False,Not stated,Unknown
+VLX-C00138150,1805000.0,,11.0,0.364,0.1782178217821782,4.0,51.0,0.36363636363636365,0.9207920792079208,0.900990099009901,London,Flat,Overseas agent partner,Cash,Individual,True,Overseas investor,35-44
+VLX-C00036954,325000.0,,0.0,0.0,0.0,0.0,735.0,0.0,0.0,0.0,East of England,Unknown,No lead,Mortgage,Individual,False,Home mover (in chain),Unknown
+VLX-C00194675,240000.0,,15.0,0.067,0.08433734939759036,1.0,445.0,0.8666666666666667,0.3132530120481928,0.0,West Midlands,Flat,Veltrix website,Cash,Individual,False,First-time buyer,35-44
+VLX-C00170841,350000.0,,40.0,0.025,0.03211009174311927,0.0,339.0,0.575,0.26146788990825687,0.01834862385321101,North West,Semi-detached,No lead,Mortgage,Individual,False,Home mover (in chain),25-34

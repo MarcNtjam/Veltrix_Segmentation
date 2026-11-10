@@ -1,0 +1,74 @@
+{
+  "numeric": [
+    "budget_gbp",
+    "rent_budget_pcm_gbp",
+    "sessions_total",
+    "night_session_share",
+    "virtual_tour_share",
+    "enquiries_total",
+    "days_since_last_activity",
+    "mobile_share",
+    "new_build_share",
+    "london_share"
+  ],
+  "categorical": [
+    "preferred_region",
+    "preferred_property_type",
+    "lead_source_primary",
+    "finance_type",
+    "customer_type",
+    "is_overseas",
+    "buyer_position",
+    "age_band"
+  ],
+  "money_log1p": [
+    "budget_gbp",
+    "rent_budget_pcm_gbp"
+  ],
+  "dropped_for_correlation": [
+    {
+      "feature": "properties_viewed",
+      "dropped_because": "r = 0.92 with sessions_total"
+    },
+    {
+      "feature": "off_plan_share",
+      "dropped_because": "r = 0.83 with new_build_share"
+    },
+    {
+      "feature": "saves_total",
+      "dropped_because": "r = 0.89 with sessions_total"
+    },
+    {
+      "feature": "property_events_total",
+      "dropped_because": "r = 0.95 with sessions_total"
+    },
+    {
+      "feature": "inbound_contacts_total",
+      "dropped_because": "r = 0.88 with enquiries_total"
+    }
+  ],
+  "scaler_mean": {
+    "budget_gbp": 10.049775,
+    "rent_budget_pcm_gbp": 1.533348,
+    "sessions_total": 14.940342,
+    "night_session_share": 0.046474,
+    "virtual_tour_share": 0.04979,
+    "enquiries_total": 0.952582,
+    "days_since_last_activity": 470.683325,
+    "mobile_share": 0.561177,
+    "new_build_share": 0.277648,
+    "london_share": 0.154981
+  },
+  "scaler_scale": {
+    "budget_gbp": 5.163942,
+    "rent_budget_pcm_gbp": 3.001416,
+    "sessions_total": 18.591547,
+    "night_session_share": 0.112436,
+    "virtual_tour_share": 0.065009,
+    "enquiries_total": 1.030526,
+    "days_since_last_activity": 381.643892,
+    "mobile_share": 0.303765,
+    "new_build_share": 0.207488,
+    "london_share": 0.286322
+  }
+}

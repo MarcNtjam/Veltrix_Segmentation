@@ -1,0 +1,16 @@
+{
+  "name": "Veltrix",
+  "dataColors": ["#1F4E79", "#E8702A", "#9BA7B4", "#C9D1D9", "#5B7A99", "#D9A47A"],
+  "background": "#FFFFFF",
+  "foreground": "#1A1A1A",
+  "tableAccent": "#1F4E79",
+  "good": "#2E8B57",
+  "neutral": "#9BA7B4",
+  "bad": "#C0392B",
+  "textClasses": {
+    "title":   { "fontFace": "Segoe UI", "fontSize": 13, "color": "#1A1A1A" },
+    "header":  { "fontFace": "Segoe UI", "fontSize": 11, "color": "#1A1A1A" },
+    "label":   { "fontFace": "Segoe UI", "fontSize": 9,  "color": "#555555" },
+    "callout": { "fontFace": "Segoe UI", "fontSize": 26, "color": "#1F4E79" }
+  }
+}

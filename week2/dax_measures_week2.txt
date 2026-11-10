@@ -1,0 +1,60 @@
+-- Veltrix Week 2 DAX measures. Add each with Modeling > New measure while your Measures table is selected.
+-- Table names assume you renamed the new tables in the Data pane as shown in brackets:
+--   feat customer_session_summary       -> session_summary
+--   feat customer_property_view_summary -> property_view_summary
+--   feat customer_region_views          -> region_views
+--   clean calendar                      -> calendar
+--   clean dashboard_segments            -> segments
+--   clean segment_in_use                -> segment_in_use
+
+-- ===== DAY 6 · Segment deep dive: where they look, how they browse =====
+Region views = SUM ( region_views[property_events] )
+Region share of views = DIVIDE ( [Region views], CALCULATE ( [Region views], REMOVEFILTERS ( region_views[region] ) ) )
+Night sessions % = DIVIDE ( SUM ( session_summary[night_sessions] ), SUM ( session_summary[n_sessions] ) )
+Virtual tour share = DIVIDE ( SUM ( property_view_summary[n_virtual_tours] ), SUM ( property_view_summary[n_property_events] ) )
+New-build view share = DIVIDE ( SUM ( property_view_summary[n_new_build_events] ), SUM ( property_view_summary[n_property_events] ) )
+Living overseas % = DIVIDE ( CALCULATE ( [Customers], clean_customers[is_overseas] = TRUE () ), [Customers] )
+Mobile sessions = SUM ( session_summary[mobile_sessions] )
+Desktop sessions = SUM ( session_summary[desktop_sessions] )
+Tablet sessions = SUM ( session_summary[tablet_sessions] )
+-- Expected with no slicer: London 19.3%, North West 13.9%, South East 12.6%, West Midlands 9.7%, Yorkshire 9.4%
+--                          Night 4.8% | Virtual tour 4.8% | New-build 32.0% | Living overseas 9.4%
+
+-- ===== DAY 7 · Pipeline and Payments KPI cards =====
+Answered within 1 hour % =
+    DIVIDE (
+        CALCULATE ( [Leads], clean_leads[first_response_min] < 60 ),
+        CALCULATE ( [Leads], NOT ISBLANK ( clean_leads[first_response_min] ) )
+    )
+Overdue now £ = CALCULATE ( SUM ( clean_payments[amount_gbp] ), clean_payments[status] = "Overdue" )
+Late rate on monthly rent % = CALCULATE ( [Late payments %], clean_payments[payment_type] = "Monthly rent" )
+Deals = COUNTROWS ( clean_transactions )
+-- Expected (all time | last 12 months): Leads 95,804 | 28,999 · Won 16,665 | 5,108 · Open pipeline 4,380
+--   Answered within 1 h 15.9% | 15.6% · Payments due 98,578 | 37,012 · Late 7.58% | 7.98%
+--   Overdue now £1,762,324 · Late rate on monthly rent 9.90% | 9.92%
+
+-- ===== DAY 8 · After adding the calendar table and its relationships =====
+-- Replace Open pipeline so the Period slicer does not hide old open leads:
+Open pipeline = CALCULATE ( [Leads], clean_leads[is_open] = 1, REMOVEFILTERS ( calendar ) )
+-- Conversion and Won by the date the lead CLOSED (uses the inactive calendar -> closed_date relationship):
+Won leads (by close date) = CALCULATE ( [Won leads], USERELATIONSHIP ( calendar[date], clean_leads[closed_date] ) )
+Conversion % (by close date) = CALCULATE ( [Conversion %], USERELATIONSHIP ( calendar[date], clean_leads[closed_date] ) )
+-- With Period = "Last 12 months": Leads 28,999 · Conversion % (by close date) 17.8% · Deal value £1,440m
+--   Median first reply 4.1 h · Late payments % 8.0% · Open pipeline 4,380 (same in every period)
+
+-- ===== DAY 9 · Segment visuals (segments table related 1:1 to clean_customers, filter both directions) =====
+Share of customers = DIVIDE ( [Customers], CALCULATE ( [Customers], REMOVEFILTERS ( segments ) ) )
+Share of deal value = DIVIDE ( [Deal value], CALCULATE ( [Deal value], REMOVEFILTERS ( segments ) ) )
+Late bar colour =
+    VAR worst = MAXX ( ALLSELECTED ( segments[segment_name] ), [Late payments %] )
+    RETURN IF ( [Late payments %] = worst, "#E8702A", "#9BA7B4" )
+-- Expected with placeholder-A and NO period filter (clear the Period slicer when you reconcile):
+--   Home movers 38,011 cust · 17.2% conv · £1,719m · 2.9% late
+--   First-time buyers 21,871 · 12.3% · £742m · 3.7%
+--   UK renters 16,818 · 24.9% · £59m · 12.3%
+--   UK investors and landlords 11,902 · 19.5% · £1,035m · 3.0%
+--   Overseas buyers and tenants 9,462 · 16.8% · £454m · 3.9%
+--   Corporate and relocation tenants 2,509 · 38.9% · £39m · 1.5%
+
+-- ===== DAY 10 · Header stamp with the model version =====
+Header stamp = "Data to 30 Sep 2026 · model " & MAX ( segment_in_use[model_version] )

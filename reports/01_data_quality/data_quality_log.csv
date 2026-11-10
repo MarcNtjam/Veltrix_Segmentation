@@ -1,0 +1,64 @@
+issue_id,check_type,table_name,column_name,check_description,rows_affected,rows_checked,pct_affected,severity,proposed_fix,dashboard_visual,rows_after_cleaning,status
+DQ-01,Keys,locations,location_id,Primary key duplicated or null,0,36,0.0,Pass,Reject load,All pages,0,Pass
+DQ-02,Keys,agents,agent_id,Primary key duplicated or null,0,300,0.0,Pass,Reject load,All pages,0,Pass
+DQ-03,Keys,customers,customer_id,Primary key duplicated or null,0,102000,0.0,Pass,Reject load,All pages,0,Pass
+DQ-04,Keys,campaigns,campaign_id,Primary key duplicated or null,0,270,0.0,Pass,Reject load,All pages,0,Pass
+DQ-05,Keys,leads,lead_id,Primary key duplicated or null,0,95804,0.0,Pass,Reject load,All pages,0,Pass
+DQ-06,Keys,interactions,interaction_id,Primary key duplicated or null,0,532789,0.0,Pass,Reject load,All pages,0,Pass
+DQ-07,Keys,properties,property_id,Primary key duplicated or null,0,16667,0.0,Pass,Reject load,All pages,0,Pass
+DQ-08,Keys,site_visits,visit_id,Primary key duplicated or null,0,233593,0.0,Pass,Reject load,All pages,0,Pass
+DQ-09,Keys,transactions,transaction_id,Primary key duplicated or null,0,16665,0.0,Pass,Reject load,All pages,0,Pass
+DQ-10,Keys,payments,payment_id,Primary key duplicated or null,0,106199,0.0,Pass,Reject load,All pages,0,Pass
+DQ-11,Keys,campaign_responses,response_id,Primary key duplicated or null,0,808953,0.0,Pass,Reject load,All pages,0,Pass
+DQ-12,Keys,web_sessions,session_id,Primary key duplicated or null,0,2003460,0.0,Pass,Reject load,All pages,0,Pass
+DQ-13,Keys,property_views,view_id,Primary key duplicated or null,0,15163137,0.0,Pass,Reject load,All pages,0,Pass
+DQ-14,Keys,properties,location_id,Orphan: location_id not found in locations,0,16667,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-15,Keys,leads,customer_id,Orphan: customer_id not found in customers,0,95804,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-16,Keys,leads,agent_id,Orphan: agent_id not found in agents,0,95804,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-17,Keys,leads,campaign_id,Orphan: campaign_id not found in campaigns,0,95804,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-18,Keys,interactions,lead_id,Orphan: lead_id not found in leads,0,532789,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-19,Keys,interactions,agent_id,Orphan: agent_id not found in agents,0,532789,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-20,Keys,site_visits,lead_id,Orphan: lead_id not found in leads,0,233593,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-21,Keys,site_visits,property_id,Orphan: property_id not found in properties,0,233593,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-22,Keys,transactions,lead_id,Orphan: lead_id not found in leads,0,16665,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-23,Keys,transactions,customer_id,Orphan: customer_id not found in customers,0,16665,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-24,Keys,transactions,property_id,Orphan: property_id not found in properties,0,16665,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-25,Keys,payments,transaction_id,Orphan: transaction_id not found in transactions,0,106199,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-26,Keys,campaign_responses,campaign_id,Orphan: campaign_id not found in campaigns,0,808953,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-27,Keys,campaign_responses,customer_id,Orphan: customer_id not found in customers,0,808953,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-28,Keys,web_sessions,customer_id,Orphan: customer_id not found in customers,0,2003460,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-29,Keys,property_views,session_id,Orphan: session_id not found in web_sessions,0,15163137,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-30,Keys,property_views,property_id,Orphan: property_id not found in properties,0,15163137,0.0,Pass,Fix or remove orphan rows,All joins,0,Pass
+DQ-31,Nulls,customers,stated_budget_gbp,Buyer with no purchase budget,30796,80810,38.11,High,Phase 2: estimate from prices viewed,Segment: median price level,30138,Open: imputed in Phase 2 from prices viewed (notebook 04)
+DQ-32,Nulls,customers,stated_rent_budget_pcm_gbp,Renter with no rent budget,8129,21190,38.36,High,Phase 2: estimate from rents viewed,Segment: median rent,8009,Open: imputed in Phase 2 from rents viewed (notebook 04)
+DQ-33,Nulls,customers,age_band,age_band missing,28096,102000,27.55,Medium,Keep as Unknown,Segment profile,27287,Accepted: kept as 'Unknown' (filled from duplicates where possible)
+DQ-34,Nulls,customers,occupation_sector,occupation_sector missing,27378,102000,26.84,Medium,Keep as Unknown,Segment profile,27000,Accepted: kept as 'Unknown' (filled from duplicates where possible)
+DQ-35,Nulls,customers,gender,gender blank AND a separate Not stated value,11156,102000,10.94,Low,Recode blank to Not stated,Segment profile,0,Fixed in clean layer
+DQ-36,Nulls,customers,uk_region_of_residence,UK resident with no region,0,92404,0.0,Pass,Keep as Unknown; infer from browsing in Phase 2,Region filter,0,Pass
+DQ-37,Nulls,customers,phone_sha256,No phone (limits duplicate matching),28918,102000,28.35,Low,Match on email instead,Customer count,28440,Accepted: match on email and profile instead
+DQ-38,Nulls,interactions,response_time_min,Inbound contact with no reply time,5830,292997,1.99,Medium,Exclude from reply KPIs (Unknown band),Pipeline: conversion by reply band,5830,"Handled in KPIs: 'Unknown' reply band, excluded from medians"
+DQ-39,Nulls,properties,size_sqm,size_sqm missing,671,16667,4.03,Low,Phase 2 estimate,Demand report,671,Accepted: not used by the dashboard KPIs
+DQ-40,Nulls,properties,epc_rating,epc_rating missing,1193,16667,7.16,Low,Keep as Unknown,Demand report,1193,Accepted: kept as 'Unknown'
+DQ-41,Nulls,transactions,finance_type,Tenancy with no finance_type,3327,16665,19.96,Low,Set to Renting,Payments: deal value by type,0,Fixed in clean layer (set to 'Renting')
+DQ-42,Nulls,web_sessions,customer_id,Anonymous session (expected),500865,2003460,25.0,Info,Keep for traffic only,Segment: browsing,500865,Expected: used for traffic totals only
+DQ-43,Labels,leads,lead_source,Non-standard lead-source spelling (14 variants),8789,95804,9.17,High,CASE mapping table (Day 4),Pipeline: conversion by channel,0,"Fixed in clean layer (CASE mapping, 14 channels)"
+DQ-44,Labels,customers,country_of_residence,"Non-standard country label (UK, U.K., England, HK, UAE, KSA...)",29989,102000,29.4,High,CASE mapping to ISO country (Day 4),Overview: overseas share,0,"Fixed in clean layer (CASE mapping, 12 countries + ISO)"
+DQ-45,Labels,web_sessions,ip_country,UK resident browsing from a non-UK IP (VPN noise),23424,1364479,1.72,Medium,"Use residence, never IP",Overview: overseas share,23424,"Rule: overseas = residence, never IP address"
+DQ-46,Range,customers,stated_budget_gbp,"Purchase budget under 5,000 (typed in thousands)",66,50014,0.13,High,x1000 (Day 4),Segment: median price level,0,Fixed in clean layer (x1000)
+DQ-47,Range,customers,stated_budget_gbp,Purchase budget 6x+ the prices the customer viewed (extra zero),77,50014,0.15,High,/10 (Day 4),Segment: median price; lead priority,0,Fixed in clean layer (/10)
+DQ-48,Range,customers,stated_budget_gbp,Budget 3-6x viewed prices starting with a stray 1,46,50014,0.09,Medium,Drop the first digit (Day 4),Segment: median price,0,Fixed in clean layer (first digit dropped)
+DQ-49,Range,customers,stated_rent_budget_pcm_gbp,"Rent budget 10,000+ a month (annual figure or extra zero)",47,13061,0.36,High,/12 or /10 (Day 4),Segment: median rent,0,Fixed in clean layer (/12 or /10)
+DQ-50,Range,payments,amount_gbp,Negative payment amount,4,106199,0.0,Medium,Ask finance,Payments: payments due,4,Open: confirm with finance; excluded from payments-due totals
+DQ-51,Range,transactions,discount_pct,"Sold above asking (negative discount, plausible)",3426,16665,20.56,Info,Keep,Demand report,3426,Expected: kept (competitive bids)
+DQ-52,Range,interactions,response_time_min,"Reply time capped at 4,320 min (3 days)",1497,287167,0.52,Low,Use bands and medians,Pipeline: median reply,1497,"Handled in KPIs: reply bands and medians, never means"
+DQ-53,Dates,leads,closed_date,Lead closed before it was created,0,95804,0.0,Pass,Investigate,Days to close,0,Pass
+DQ-54,Dates,leads,converted,converted flag disagrees with stage Won,0,95804,0.0,Pass,Use stage,Conversion %,0,Pass
+DQ-55,Dates,leads,created_date,Lead before the customer first contact,0,95804,0.0,Pass,Investigate,Customer history,0,Pass
+DQ-56,Dates,leads,agent_id,Lead handled before the agent was hired,0,95804,0.0,Pass,Investigate,Agent seniority,0,Pass
+DQ-57,Dates,site_visits,visit_date,Viewing before the lead was created,0,233593,0.0,Pass,Investigate,Pipeline,0,Pass
+DQ-58,Dates,transactions,contract_date,Contract before the lead was created,0,16665,0.0,Pass,Investigate,Days to close,0,Pass
+DQ-59,Dates,transactions,lead_id,Transaction on a lead that is not Won,0,16665,0.0,Pass,Investigate,Deal value,0,Pass
+DQ-60,Dates,payments,due_date,"Payment due after 30 Sep 2026 (future schedule, expected)",7621,106199,7.18,Info,Exclude from late share,Payments: late share,7621,Expected: excluded from the late-payment share
+DQ-61,Duplicates,customers,email_sha256,Records sharing an email hash with another record,2206,102000,2.16,High,Merge (Day 4),Overview: customers card,0,Fixed in clean layer (merged to the oldest record)
+DQ-62,Duplicates,customers,phone_sha256,Records sharing a phone hash with another record,1452,102000,1.42,High,Merge (Day 4),Overview: customers card,0,Fixed in clean layer (merged to the oldest record)
+DQ-63,Duplicates,customers,(profile),Profile look-alike pairs (no shared hash) queued for manual review,1000,100573,0.99,Medium,Reviewers work clean.dedupe_review_queue from rank 1; accepted pairs join the merge map,Overview: customers card,1000,Open: manual review (top 100 first)

@@ -1,0 +1,227 @@
+{
+  "model_version": "seg-v1.0",
+  "algorithm": "k-prototypes (kmodes)",
+  "k": 6,
+  "gamma": 1.0,
+  "init": "Cao",
+  "random_state": 42,
+  "trained_on": "20,000 customer sample; all 100,573 customers assigned",
+  "data_to": "2026-09-30",
+  "numeric": [
+    "budget_gbp",
+    "rent_budget_pcm_gbp",
+    "sessions_total",
+    "night_session_share",
+    "virtual_tour_share",
+    "enquiries_total",
+    "days_since_last_activity",
+    "mobile_share",
+    "new_build_share",
+    "london_share"
+  ],
+  "categorical": [
+    "preferred_region",
+    "preferred_property_type",
+    "lead_source_primary",
+    "finance_type",
+    "customer_type",
+    "is_overseas",
+    "buyer_position",
+    "age_band"
+  ],
+  "money_log1p": [
+    "budget_gbp",
+    "rent_budget_pcm_gbp"
+  ],
+  "scaler_mean": {
+    "budget_gbp": 10.049775,
+    "rent_budget_pcm_gbp": 1.533348,
+    "sessions_total": 14.940342,
+    "night_session_share": 0.046474,
+    "virtual_tour_share": 0.04979,
+    "enquiries_total": 0.952582,
+    "days_since_last_activity": 470.683325,
+    "mobile_share": 0.561177,
+    "new_build_share": 0.277648,
+    "london_share": 0.154981
+  },
+  "scaler_scale": {
+    "budget_gbp": 5.163942,
+    "rent_budget_pcm_gbp": 3.001416,
+    "sessions_total": 18.591547,
+    "night_session_share": 0.112436,
+    "virtual_tour_share": 0.065009,
+    "enquiries_total": 1.030526,
+    "days_since_last_activity": 381.643892,
+    "mobile_share": 0.303765,
+    "new_build_share": 0.207488,
+    "london_share": 0.286322
+  },
+  "categories": {
+    "preferred_region": [
+      "East Midlands",
+      "East of England",
+      "London",
+      "North East",
+      "North West",
+      "Scotland",
+      "South East",
+      "South West",
+      "Unknown",
+      "Wales",
+      "West Midlands",
+      "Yorkshire and the Humber"
+    ],
+    "preferred_property_type": [
+      "Bungalow",
+      "Detached",
+      "Flat",
+      "Maisonette",
+      "Semi-detached",
+      "Terraced",
+      "Unknown"
+    ],
+    "lead_source_primary": [
+      "Branch walk-in",
+      "Email newsletter",
+      "Facebook",
+      "Google Ads",
+      "Instagram",
+      "No lead",
+      "OnTheMarket",
+      "Overseas agent partner",
+      "Referral",
+      "Relocation partner",
+      "Rightmove",
+      "TikTok",
+      "Veltrix website",
+      "WeChat",
+      "Zoopla"
+    ],
+    "finance_type": [
+      "Buy-to-let mortgage",
+      "Cash",
+      "Company let",
+      "Equity release",
+      "Mortgage",
+      "Mortgage + Lifetime ISA",
+      "Overseas mortgage",
+      "Renting",
+      "Shared ownership"
+    ],
+    "customer_type": [
+      "Corporate",
+      "Individual",
+      "Limited company (SPV)"
+    ],
+    "is_overseas": [
+      "False",
+      "True"
+    ],
+    "buyer_position": [
+      "Corporate tenant",
+      "Downsizer (chain-free)",
+      "First-time buyer",
+      "Home mover (in chain)",
+      "Not stated",
+      "Overseas investor",
+      "Portfolio landlord",
+      "Renter"
+    ],
+    "age_band": [
+      "18-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65+",
+      "Unknown"
+    ]
+  },
+  "numeric_ranges": {
+    "sessions_total": [
+      0.0,
+      9.0,
+      93.0
+    ],
+    "night_session_share": [
+      0.0,
+      0.0,
+      0.5
+    ],
+    "virtual_tour_share": [
+      0.0,
+      0.033707865168539325,
+      0.2645938375350138
+    ],
+    "enquiries_total": [
+      0.0,
+      1.0,
+      4.0
+    ],
+    "days_since_last_activity": [
+      0.0,
+      421.0,
+      1272.0
+    ],
+    "mobile_share": [
+      0.0,
+      0.6,
+      1.0
+    ],
+    "new_build_share": [
+      0.0,
+      0.23809523809523808,
+      0.926829268292683
+    ],
+    "london_share": [
+      0.0,
+      0.022222222222222223,
+      0.9411764705882353
+    ]
+  },
+  "budget_ranges": {
+    "budget_gbp": [
+      110000.0,
+      315000.0,
+      1025000.0
+    ],
+    "rent_budget_pcm_gbp": [
+      725.0,
+      1500.0,
+      4800.0
+    ]
+  },
+  "cluster_to_segment": {
+    "0": {
+      "segment_id": 2,
+      "segment_name": "Home movers"
+    },
+    "1": {
+      "segment_id": 3,
+      "segment_name": "Renters"
+    },
+    "2": {
+      "segment_id": 1,
+      "segment_name": "First-time buyers"
+    },
+    "3": {
+      "segment_id": 4,
+      "segment_name": "Buy-to-let investors"
+    },
+    "4": {
+      "segment_id": 5,
+      "segment_name": "Overseas investors"
+    },
+    "5": {
+      "segment_id": 6,
+      "segment_name": "Window shoppers"
+    }
+  },
+  "metrics": {
+    "silhouette_gower": 0.1969137421230816,
+    "bootstrap_ari_mean": 0.6575179161051061,
+    "smallest_segment_pct": 6.825,
+    "reproduces_saved_labels": 1.0
+  }
+}

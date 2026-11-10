@@ -1,0 +1,76 @@
+-- Veltrix Week 3 DAX measures. Add with Modeling > New measure (select your Measures table first).
+-- New tables to load and rename (Get data > PostgreSQL > veltrix):
+--   clean.segment_dim -> segment_dim        clean.segment_index -> segment_index
+--   clean.segment_channels -> segment_channels   clean.segment_tiers -> segment_tiers
+--   clean.segment_actions -> segment_actions     clean.open_leads_by_tier -> open_leads_by_tier
+--   clean.segment_demand -> segment_demand       clean.final_check -> final_check
+--   clean.crm_export_counts -> crm_export_counts clean.test_kpi_weekly -> test_kpi_weekly
+--   clean.test_settings -> test_settings         clean.segment_movement -> segment_movement
+--   clean.monitoring_latest -> monitoring_latest
+-- Relationships (one segment_dim row -> many):
+--   segment_dim[segment_name] -> segments[segment_name]           (one to many, single)
+--   segment_dim[segment_name] -> segment_tiers[segment_name]      (one to one)
+--   segment_dim[segment_name] -> segment_actions[segment_name]    (one to one)
+--   segment_dim[segment_name] -> segment_index[segment_name]      (one to many)
+--   segment_dim[segment_name] -> segment_channels[segment_name]   (one to many)
+--   segment_dim[segment_name] -> segment_demand[segment_name]     (one to many)
+
+-- ===== FIX the Week 2 share measures: the selector now filters through segment_dim =====
+Share of customers = DIVIDE ( [Customers], CALCULATE ( [Customers], REMOVEFILTERS ( segments ), REMOVEFILTERS ( segment_dim ) ) )
+Share of deal value = DIVIDE ( [Deal value], CALCULATE ( [Deal value], REMOVEFILTERS ( segments ), REMOVEFILTERS ( segment_dim ) ) )
+
+-- ===== DAY 11 · Segment cards with a comparison sub-line =====
+Conversion % (all customers) = CALCULATE ( [Conversion % (by close date)], REMOVEFILTERS ( segments ), REMOVEFILTERS ( segment_dim ) )
+Late payments % (all customers) = CALCULATE ( [Late payments %], REMOVEFILTERS ( segments ), REMOVEFILTERS ( segment_dim ) )
+Median days to decide = MEDIAN ( clean_leads[days_to_decision] )
+Median days to decide (all customers) = CALCULATE ( [Median days to decide], REMOVEFILTERS ( segments ), REMOVEFILTERS ( segment_dim ) )
+Price level =
+    VAR buyers = COUNT ( clean_customers[price_level_gbp] )
+    VAR renters = COUNT ( clean_customers[rent_level_pcm] )
+    RETURN IF ( buyers >= renters,
+        "£" & FORMAT ( MEDIAN ( clean_customers[price_level_gbp] ) / 1000, "#,0" ) & "k",
+        "£" & FORMAT ( MEDIAN ( clean_customers[rent_level_pcm] ), "#,0" ) & " pcm" )
+-- Sub-lines (put each in a small text card under its KPI card)
+Conversion sub-line = "vs " & FORMAT ( [Conversion % (all customers)], "0.0%" ) & " for all customers"
+Late sub-line = "vs " & FORMAT ( [Late payments % (all customers)], "0.0%" ) & " for all customers"
+Days sub-line = "vs " & FORMAT ( [Median days to decide (all customers)], "0" ) & " days for all customers"
+Value sub-line = FORMAT ( [Share of customers], "0.0%" ) & " of customers"
+-- Channel share for "How they arrive" (use with segment_channels, filter channel_rank <= 5)
+Channel share of segment leads = DIVIDE ( SUM ( segment_channels[leads] ), CALCULATE ( SUM ( segment_channels[leads] ), REMOVEFILTERS ( segment_channels[channel], segment_channels[channel_group], segment_channels[channel_rank] ) ) )
+-- Expected with "UK investors and landlords" selected (placeholder-A, NO period filter):
+--   Customers 11,902 | Price level £195k | Conversion 19.5% (vs 18.2%) | Share of deal value 25.6%
+--   Days to decide 33 (vs 36) | Late payments 3.0% (vs 7.6%)
+--   Top channels: Rightmove 22.3%, Veltrix website 15.7%, Referral 13.5%, Email newsletter 13.2%, Zoopla 12.1%
+
+-- ===== DAY 12 · Tier tag, action panel =====
+Tier = SELECTEDVALUE ( segment_tiers[priority_tier] )
+Tier colour = SWITCH ( SELECTEDVALUE ( segment_tiers[priority_tier] ), "P1", "#E8702A", "P2", "#1F4E79", "P3", "#9BA7B4" )
+Recommended action = SELECTEDVALUE ( segment_actions[recommended_action], "Select one segment to see its recommended action" )
+Action: size and value = SELECTEDVALUE ( segment_actions[size_and_value] )
+Action: conversion = SELECTEDVALUE ( segment_actions[conversion_fact] )
+Action: behaviour = SELECTEDVALUE ( segment_actions[behaviour_fact] )
+Open leads (table) = SUM ( open_leads_by_tier[open_leads] )
+
+-- ===== DAY 13 · Segment movement =====
+Customers moved % =
+    DIVIDE ( CALCULATE ( SUM ( segment_movement[customers] ), segment_movement[stayed] = FALSE () ),
+             SUM ( segment_movement[customers] ) )
+
+-- ===== DAY 14 · Test KPI card (KPI visual: Value, Trend axis = test_kpi_weekly[week_starting], Target) =====
+Test viewing 14d % =
+    DIVIDE ( CALCULATE ( SUM ( test_kpi_weekly[viewing_within_14_days] ), test_kpi_weekly[test_group] = "Test" ),
+             CALCULATE ( SUM ( test_kpi_weekly[leads_with_14_days] ), test_kpi_weekly[test_group] = "Test" ) )
+Control viewing 14d % =
+    DIVIDE ( CALCULATE ( SUM ( test_kpi_weekly[viewing_within_14_days] ), test_kpi_weekly[test_group] = "Control" ),
+             CALCULATE ( SUM ( test_kpi_weekly[leads_with_14_days] ), test_kpi_weekly[test_group] = "Control" ) )
+Test target % = [Control viewing 14d %] + MAX ( test_settings[target_uplift_pts] ) / 100
+Test uplift (pts) = ( [Test viewing 14d %] - [Control viewing 14d %] ) * 100
+-- Expected on the A/A check (3 Aug - 13 Sep 2026): Test 51.9% · Control 49.9% · uplift 2.0 pts · target 58.9%
+
+-- ===== Display folders (Model view > select measure > Properties > Display folder) =====
+-- 1 Customers and segments: Customers, Share of customers, Share of deal value, Price level, Tier, sub-lines
+-- 2 Pipeline: Leads, Won leads (by close date), Conversion % (by close date), Answered within 1 hour %, Open pipeline, Median first reply (h), Median days to decide
+-- 3 Payments: Payments due, Late payments %, Overdue now £, Late rate on monthly rent %, Deal value, Deals
+-- 4 Browsing: Region views, Region share of views, Night sessions %, Virtual tour share, New-build view share, Living overseas %, Mobile/Desktop/Tablet sessions
+-- 5 Test and monitoring: Test viewing 14d %, Control viewing 14d %, Test target %, Test uplift (pts), Customers moved %
+-- 6 Helpers (hide): Tier colour, Late bar colour, card-display text measures, Header stamp

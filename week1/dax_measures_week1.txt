@@ -1,0 +1,23 @@
+-- Veltrix Week 1 DAX measures (Day 4). Create a table _Measures (Home > Enter data > OK),
+-- then Modeling > New measure for each line. Tables renamed to clean_leads, clean_customers, etc.
+
+Customers = COUNTROWS ( clean_customers )
+Leads = COUNTROWS ( clean_leads )
+Closed leads = CALCULATE ( [Leads], clean_leads[is_closed] = 1 )
+Won leads = CALCULATE ( [Leads], clean_leads[converted] = TRUE () )
+Conversion % = DIVIDE ( [Won leads], [Closed leads] )
+Deal value = SUM ( clean_transactions[deal_value_gbp] )
+Median first reply (h) = MEDIAN ( clean_leads[first_response_min] ) / 60
+Payments due = CALCULATE ( COUNTROWS ( clean_payments ), clean_payments[status] <> "Scheduled" )
+Late payments % = DIVIDE ( CALCULATE ( [Payments due], clean_payments[is_late_or_overdue] = 1 ), [Payments due] )
+Open pipeline = CALCULATE ( [Leads], clean_leads[is_open] = 1 )
+
+-- 12-month versions for the KPI cards (Oct 2025 - Sep 2026)
+Leads 12m = CALCULATE ( [Leads], DATESBETWEEN ( clean_leads[created_day], DATE (2025,10,1), DATE (2026,9,30) ) )
+Conversion % 12m = CALCULATE ( [Conversion %], DATESBETWEEN ( clean_leads[closed_date], DATE (2025,10,1), DATE (2026,9,30) ) )
+Deal value 12m = CALCULATE ( [Deal value], DATESBETWEEN ( clean_transactions[contract_date], DATE (2025,10,1), DATE (2026,9,30) ) )
+Median first reply (h) 12m = CALCULATE ( [Median first reply (h)], DATESBETWEEN ( clean_leads[created_day], DATE (2025,10,1), DATE (2026,9,30) ) )
+Late payments % 12m = CALCULATE ( [Late payments %], DATESBETWEEN ( clean_payments[due_date], DATE (2025,10,1), DATE (2026,9,30) ) )
+
+-- Expected (must equal clean.powerbi_check): Customers 100,573 | Leads 12m 28,999 | Conversion % 12m 17.77%
+-- Deal value 12m £1,440.4m | Median first reply 12m 4.08 h | Late payments % 12m 7.98% | Open pipeline 4,380

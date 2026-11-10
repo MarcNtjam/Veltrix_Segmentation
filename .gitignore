@@ -1,0 +1,14 @@
+# data and secrets: never upload
+restricted/
+data/
+*.parquet
+mlflow.db
+mlruns/
+reports/07_activation/crm_segments_*.csv
+reports/07_activation/audiences/
+
+# Python and editor clutter
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+*.pyc
